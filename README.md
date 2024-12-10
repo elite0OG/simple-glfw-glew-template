@@ -16,4 +16,4 @@ A basic template to set up an OpenGL project using GLFW and GLEW. This template 
 
 ---
 
-Feel free to modify the template as per your project needs!
+Feel free to modify the template as per your project needs!!
