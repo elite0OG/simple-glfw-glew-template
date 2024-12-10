@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 # Compiler and flags
 compiler="g++"
@@ -8,20 +8,18 @@ flags="-g --std=c++17"
 include="-Iinclude"
 
 # Library directories
-libdir="-Llib -Llib/Release/x64"
+libdir="-Llib"
 
 # Source files
 src="src/main.cpp"
 
-# Additional source files (if required, e.g., glad.c)
-additional_src=""
-
-# Libraries to link
-libs="-lglew32 -lglew32s -lglfw3dll"
+# Libraries to link (linking to static libraries)
+libs="-lglew32 -lglew32s -lglfw3dll -lopengl32"
 
 # Output executable
 output="-o main.exe"
 
 # Compile command
-$compiler $flags $include $libdir $src $additional_src $libs $output
- 
+$compiler $flags $include $libdir $src $libs $output
+
+
